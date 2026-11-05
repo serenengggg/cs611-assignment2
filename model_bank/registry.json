@@ -1,0 +1,144 @@
+{
+  "models": [
+    {
+      "model_version": "credit_default_2024_01_01",
+      "algorithm": "hist_gradient_boosting",
+      "trained_on": "2024-01-01",
+      "oot_auc": 0.8114,
+      "champion_oot_auc_same_window": null,
+      "status": "retired",
+      "promoted_on": "2024-01-01",
+      "retired_on": "2024-07-01"
+    },
+    {
+      "model_version": "credit_default_2024_07_01",
+      "algorithm": "hist_gradient_boosting",
+      "trained_on": "2024-07-01",
+      "oot_auc": 0.8283,
+      "champion_oot_auc_same_window": 0.8057,
+      "status": "retired",
+      "promoted_on": "2024-07-01",
+      "retired_on": "2025-01-01"
+    },
+    {
+      "model_version": "credit_default_2025_01_01",
+      "algorithm": "hist_gradient_boosting",
+      "trained_on": "2025-01-01",
+      "oot_auc": 0.8225,
+      "champion_oot_auc_same_window": 0.821,
+      "status": "retired",
+      "promoted_on": "2025-01-01",
+      "retired_on": "2025-07-01"
+    },
+    {
+      "model_version": "credit_default_2025_07_01",
+      "algorithm": "hist_gradient_boosting",
+      "trained_on": "2025-07-01",
+      "oot_auc": 0.8044,
+      "champion_oot_auc_same_window": 0.8032,
+      "status": "champion",
+      "promoted_on": "2025-07-01"
+    }
+  ],
+  "events": [
+    {
+      "run_date": "2024-01-01",
+      "event": "promoted",
+      "reason": "initial model build",
+      "model_version": "credit_default_2024_01_01"
+    },
+    {
+      "run_date": "2024-02-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2024-03-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2024-04-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2024-05-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2024-06-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2024-07-01",
+      "event": "promoted",
+      "reason": "scheduled 6-monthly refresh",
+      "model_version": "credit_default_2024_07_01"
+    },
+    {
+      "run_date": "2024-08-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2024-09-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2024-10-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2024-11-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2024-12-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2025-01-01",
+      "event": "promoted",
+      "reason": "scheduled 6-monthly refresh",
+      "model_version": "credit_default_2025_01_01"
+    },
+    {
+      "run_date": "2025-02-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2025-03-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2025-04-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2025-05-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2025-06-01",
+      "event": "no_retrain",
+      "reason": "champion healthy, no refresh due"
+    },
+    {
+      "run_date": "2025-07-01",
+      "event": "promoted",
+      "reason": "scheduled 6-monthly refresh",
+      "model_version": "credit_default_2025_07_01"
+    }
+  ]
+}

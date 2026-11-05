@@ -1,0 +1,150 @@
+{
+  "model_version": "credit_default_2024_07_01",
+  "algorithm": "hist_gradient_boosting",
+  "best_params": {
+    "model__min_samples_leaf": 20,
+    "model__max_iter": 100,
+    "model__max_depth": 4,
+    "model__learning_rate": 0.05,
+    "model__l2_regularization": 1.0
+  },
+  "trained_on": "2024-07-01",
+  "trained_at": "2026-10-21T08:36:49",
+  "train_reason": "scheduled 6-monthly refresh",
+  "label_definition": "30dpd_6mob",
+  "train_window": [
+    "2023-02-01",
+    "2023-11-01"
+  ],
+  "oot_window": [
+    "2023-12-01",
+    "2024-01-01"
+  ],
+  "n_train": 3951,
+  "n_test": 988,
+  "n_oot": 974,
+  "default_rate_train": 0.2824601366742597,
+  "metrics": {
+    "cv_auc": 0.8205,
+    "train_auc": 0.9128,
+    "test_auc": 0.8244,
+    "oot_auc": 0.8283
+  },
+  "oot_gini": 0.6565,
+  "decision_threshold": 0.5133488511252463,
+  "candidates": [
+    {
+      "algorithm": "logistic_regression",
+      "best_params": {
+        "model__C": 0.01
+      },
+      "cv_auc": 0.7889,
+      "train_auc": 0.8093,
+      "test_auc": 0.8014,
+      "oot_auc": 0.7874
+    },
+    {
+      "algorithm": "random_forest",
+      "best_params": {
+        "model__n_estimators": 200,
+        "model__min_samples_leaf": 25,
+        "model__max_features": 0.3,
+        "model__max_depth": 8
+      },
+      "cv_auc": 0.8093,
+      "train_auc": 0.9045,
+      "test_auc": 0.8125,
+      "oot_auc": 0.8103
+    },
+    {
+      "algorithm": "hist_gradient_boosting",
+      "best_params": {
+        "model__min_samples_leaf": 20,
+        "model__max_iter": 100,
+        "model__max_depth": 4,
+        "model__learning_rate": 0.05,
+        "model__l2_regularization": 1.0
+      },
+      "cv_auc": 0.8205,
+      "train_auc": 0.9128,
+      "test_auc": 0.8244,
+      "oot_auc": 0.8283
+    }
+  ],
+  "features": [
+    "Age",
+    "Annual_Income",
+    "Monthly_Inhand_Salary",
+    "Num_Bank_Accounts",
+    "Num_Credit_Card",
+    "Interest_Rate",
+    "Num_of_Loan",
+    "Delay_from_due_date",
+    "Num_of_Delayed_Payment",
+    "Changed_Credit_Limit",
+    "Num_Credit_Inquiries",
+    "Outstanding_Debt",
+    "Credit_Utilization_Ratio",
+    "Total_EMI_per_month",
+    "Amount_invested_monthly",
+    "Monthly_Balance",
+    "fe_1",
+    "fe_2",
+    "fe_3",
+    "fe_4",
+    "fe_5",
+    "fe_6",
+    "fe_7",
+    "fe_8",
+    "fe_9",
+    "fe_10",
+    "fe_11",
+    "fe_12",
+    "fe_13",
+    "fe_14",
+    "fe_15",
+    "fe_16",
+    "fe_17",
+    "fe_18",
+    "fe_19",
+    "fe_20",
+    "click_months_lag",
+    "has_clickstream",
+    "debt_to_income",
+    "emi_to_salary",
+    "invest_to_salary",
+    "balance_to_salary",
+    "credit_history_years",
+    "has_auto_loan",
+    "has_credit_builder_loan",
+    "has_debt_consolidation_loan",
+    "has_home_equity_loan",
+    "has_mortgage_loan",
+    "has_payday_loan",
+    "has_personal_loan",
+    "has_student_loan",
+    "has_not_specified",
+    "no_loan_history",
+    "credit_mix_score",
+    "pays_min_amount",
+    "spend_level",
+    "payment_size"
+  ],
+  "top_features": {
+    "Interest_Rate": 0.04535,
+    "Outstanding_Debt": 0.04096,
+    "Delay_from_due_date": 0.03287,
+    "fe_5": 0.01468,
+    "Num_Credit_Card": 0.01095,
+    "fe_10": 0.00808,
+    "Changed_Credit_Limit": 0.00723,
+    "Num_of_Delayed_Payment": 0.00655,
+    "Amount_invested_monthly": 0.00464,
+    "fe_4": 0.00433,
+    "emi_to_salary": 0.00411,
+    "spend_level": 0.00407,
+    "credit_mix_score": 0.00364,
+    "Total_EMI_per_month": 0.00336,
+    "fe_3": 0.00319
+  }
+}
